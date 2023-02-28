@@ -1,0 +1,42 @@
+body{
+    height: 100%;
+    width: 100%;
+margin: auto;
+display: grid;
+margin-top: 10%;
+margin-bottom: 10%;
+background-color: lightgray;
+}
+
+.container{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(139, 238, 255, 0.753);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 15px 15px 25px gray;
+}
+.wynik{
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+    border: solid 1px rgb(14, 158, 151);
+    margin-bottom: 5px;
+        border-radius: 5px;
+}
+button{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(178, 252, 248);
+    border: solid 1px rgb(14, 158, 151);
+        border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(12, 201, 191);
+}
