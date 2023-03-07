@@ -10,6 +10,5 @@ NUM.forEach((number, index) => {
         currentIndex = index;
         wynik.innerHTML = NUM[currentIndex].innerHTML;
         // console.log(NUM[currentIndex].innerHTML);
-
     });
 });
