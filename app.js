@@ -7,7 +7,7 @@ let podajwynik = document.querySelector(".podajwynik ");
 // console.log(plus);
 // console.log(NUM);
 let currentIndex;
-
+var rowny;
 
 let downloadNumber = new Function ( NUM.forEach((number, index) => { //wywołuje liczby na ekran
     number.addEventListener("click", () =>{
@@ -21,10 +21,16 @@ let downloadNumber = new Function ( NUM.forEach((number, index) => { //wywołuje
 var number = downloadNumber();
 
 plus.addEventListener("click", () =>{
-    
-
-    (wynik.innerHTML) = (wynik.innerHTML) + 5; 
-    return(wynik.innerHTML);
+    rowny = wynik.innerHTML;
+     NUM.forEach((number, index) => { //wywołuje liczby na ekran
+        number.addEventListener("click", () =>{
+            currentIndex = index;
+            wynik.innerHTML = NUM[currentIndex].innerHTML;
+            return(wynik.innerHTML);
+        });
+    })
+    rowny = rowny + 5;
+    return(rowny);
     });
 
-// console.log(wynik.innerHTML);
+console.log(rowny);
